@@ -1,0 +1,150 @@
+body {
+    font-family: sans-serif;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+/* ALL ABOUT THE NAV BAR - STARTS HERE */
+header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav {
+    z-index: 1;
+    height: 64px;
+    font-size: 1.175rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo {
+    padding-left: 24px;
+    align-items: center;
+    display: flex;
+}
+
+nav .logo a {
+    align-items: center;
+    display: flex;
+}
+
+nav .menu {
+    display: flex;
+    padding-right: 6px;
+    
+}
+
+nav ul {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    padding: 0 16px 0 0;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#logo-name2 {
+    color: gray;
+    font-weight: 500;
+}
+
+
+
+/* END OF NAV BAR STYLES */
+
+/* FIRST SECTION */
+
+.banner-container {
+    position: relative;
+    top: 64px;
+    background-color: rgb(212, 212, 212);
+    display: flex;
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.photo-container {
+    width: 50%;
+}
+
+*.photo-container img {
+    width: 100%;
+    padding: 32px 24px;
+}*
+
+.info-content {
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.info-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-content p {
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+.start-here-btn {
+    background-color: rgb(66, 63, 63);
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 1.2rem;
+    width: 60%;
+}
+/* AGORA VAI*/
+
+ul.banner-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.banner-content li {
+    padding: 20px;
+    height: 290px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.banner-left {
+    flex-basis: 40%;
+    background-image: url('./images/banner.jpg');
+
+}
+
+.banner-right {
+    flex-basis: 60%;
+}
+
+.banner-area p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0;
+}
