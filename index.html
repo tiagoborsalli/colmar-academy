@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style.css" type="text/css" rel="stylesheet">
+    <link href="./images/ic-logo.svg" rel="icon" type="image/x-icon">
     <title>Colmar Academy</title>
 </head>
 <body>
@@ -27,26 +28,27 @@
            <img src="./images/banner.jpg"> 
         </div>
        <div class="info-content">
-            <h2>Learn something<br> new everyday</h2>
-            <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+            <h1 class="title">Learn something<br> new everyday</h2>
+            <p class="p-description">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
             <div id="start-here-btn">
                 <span><a href="#">Start here</a></span>
            </div>
         </div>    
     </div>
 </main>
+
 <section class="blog-container" id="blog">
     <div class="blog-photo-container">
         <img src="./images/information-main.jpg" alt="Student reading a book">
         <div class="blog-description">
-            <h2>It doesn't hurt to keep practicing</h2>   
-            <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,<br>
+            <h2 class="title">It doesn't hurt to keep practicing</h2>   
+            <p class="p-description">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,<br>
             nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam<br>
         eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         <p class="blog-author">Emanuel, Sr Strategist at Hiring.com</p>
         </div>
     </div>
-    
+  <!-- BLOG INIT -->  
     <div class="blog-content">
         <div class="blog-row">
             <div class="blog-pic">
@@ -83,6 +85,7 @@
         </div>
     </div>
 </section>
+  <!-- BLOG END -->  
 <section class="courses">
     <div class="courses-header">
         <h2>Start Learning</h2>
@@ -163,6 +166,56 @@
         <!-- COURSE CARD 6 - END -->
     </div>
 </section>
+
+<section class="thesis">
+    <div class="thesis-title">
+        <h2>Thesis exhibit</h2>
+    </div>
+    <div class="thesis-container">
+        <div class="vid-container">
+            <video controls autoplay muted loop>
+                <source src="./videos/thesis.mp4">
+            </video>
+            <div class="vid-description">
+                <h2>Reimagine urban</h2>
+                <p>"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec <br>
+                consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget<br>
+                magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            </div>
+        </div>
+        <div class="thesis-news">
+            <div class="blog-row">
+                <div class="blog-pic">
+                    <img src="./images/thesis-fisma.jpg" alt="#">
+                </div>
+                <div class="blog-news"> 
+                    <b class="blog-title">Fisma: Design and<br>Prototype</b>
+                    <span class="blog-news-description">Designer showcase of new<br>
+                    prototype product</span>
+                </div>
+            </div>
+            <div class="blog-row">
+                <div class="blog-pic">
+                    <img src="./images/thesis-now-and-then.jpg" alt="#">
+                </div>
+                <div class="blog-news"> 
+                    <b class="blog-title">Now and then</b>
+                    <span class="blog-news-description">Research study about New York</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>© 2016 Colmar Academy. All rights reserved</p>
+        <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+    </div>
+</footer>
 
 </body>
 </html>

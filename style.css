@@ -21,6 +21,20 @@ a:visited, a:active, a:focus {
     color: black;
 }
 
+
+.p-description {
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--main-title-color);
+}
+
+
+
 /* ALL ABOUT THE NAV BAR - STARTS HERE */
 header {
     position: fixed;
@@ -115,10 +129,7 @@ nav ul li a {
     color: var(--main-title-color);;
 }
 
-.info-content p {
-    font-size: 1.8rem;
-    margin-top: 0;
-}
+
 #start-here-btn {
     background-color: rgb(66, 63, 63);
     
@@ -200,6 +211,16 @@ nav ul li a {
 
 .blog-row:hover {
     background-color: var(--gray);
+}
+
+.blog-row:first-child {
+    border: 0px solid #fff;
+ 
+}
+
+.blog-row:last-child {
+    border: 0px solid #fff;
+ 
 }
 
 .blog-pic img {
@@ -314,4 +335,95 @@ nav ul li a {
     font-size: .9rem;
     margin-bottom: 24px;
     margin-left: 16px;
+}
+
+/* THESIS SECTION INIT */
+
+.thesis {
+    position: relative;
+    top: 64px;
+    background-color: #fff;
+    width: var(--bd-width);
+    margin: 0 auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.thesis-title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    color: var(--main-title-color);
+    
+}
+
+.thesis-title h2 {
+    margin: 0;
+    padding: 32px 0;
+    font-size: 2rem;
+}
+
+.thesis-container {
+    display: flex;
+    width: 100%;
+}
+
+.vid-container {
+    display: block;
+    width: 50%;
+    border-right: 1px solid var(--gray);
+}
+
+.vid-container video {
+    width: 93%;
+    padding: 0 24px;
+}
+
+.vid-description {
+    margin-left: 24px;
+}
+
+.vid-description h2 {
+    margin: 24px 0;
+}
+
+.thesis-news {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+footer {
+    position: relative;
+    top: 64px; 
+    width: var(--bd-width);
+    margin: 0 auto;;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid var(--gray);
+    padding-top: 16px;
+    padding-bottom: 20px;
+    font-size: .8rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin: 0 5px;
 }
