@@ -44,8 +44,43 @@ header {
     z-index: 1;
     background-color: #fff;
 }
+
+@media only screen and (max-width: 375px) {
+    header {
+        height: 64px;
+    }
+    .mobile-menu {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mobile-menu a img {
+        width: 50px;
+    }
+
+    #logo-name1, #logo-name2, body nav .logo, .menu li {
+        display: none;
+    }
+
+    .menu ul {
+        display: none !important;
+        margin: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 376px)  {
+    .mobile-menu {
+        display: none;
+    }
+    .blog-pic .mobile-pic {
+        display: none;
+    }
+
+}
+
 nav {
-    
     height: 64px;
     font-size: 1.175rem;
     display: flex;
@@ -71,7 +106,10 @@ nav .menu {
 
 nav ul {
     float: right;
+    margin: auto 0;
+    padding: auto 0;
 }
+
 nav ul li {
     display: inline-block;
     padding: 0 16px 0 0;
@@ -106,6 +144,52 @@ nav ul li a {
     border-right: 1px solid black;
 }
 
+@media only screen and (max-width: 375px) {
+    .banner-container {
+        display: block;
+    }
+    main .photo-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    main .photo-container img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    main .info-content {
+        margin: 0;
+        padding: 0;
+    }
+    
+    main .info-content h1 {
+        margin: 32px 16px;
+        font-size: 6rem;
+    }
+    
+    #start-here-btn span {
+        font-size: 3rem;
+    }
+
+    #start-here-btn {
+        margin: 0 auto;
+        margin-bottom: 32px;
+       
+    }
+
+    main .info-content #start-here-btn {
+        background-color: rgb(121, 119, 119);
+    }
+
+    main .p-description {
+        font-size: 3.5rem;
+        margin-bottom: 24px;
+        margin-left: 16px;
+    }
+}
 .photo-container {
     width: 50%;
 }
@@ -123,14 +207,14 @@ nav ul li a {
     justify-content: center;
 }
 
-.info-content h2 {
+.info-content h1 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
     color: var(--main-title-color);;
 }
 
 
-#start-here-btn {
+.info-content #start-here-btn {
     background-color: rgb(66, 63, 63);
     
     text-align: center;
@@ -190,7 +274,61 @@ nav ul li a {
     padding: 32px 0;
 }
 
+@media only screen and (max-width: 375px) {
+    .blog-photo-container {
+        display: none;
+    }
 
+    .blog-container {
+        display: block;
+    }
+
+    .blog-container .blog-content {
+        width: 100%;
+    }
+    .blog-content .blog-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .blog-content .blog-pic {
+        width: 100%;
+    }
+    .blog-pic .mobile-pic {
+        width: 97%;
+        padding: 0 16px;
+    }
+    .mobile-pic img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .blog-row .blog-news {
+        width: 97%;
+        padding: 64px 16px
+    }
+
+    .blog-pic .desktop-pic {
+        display: none;
+    }
+
+    .blog-news .blog-title {
+        font-size: 4rem;
+        margin: 0 16px;
+    }
+
+    .blog-news span {
+        font-size: 2rem;
+        margin: 10px 16px;
+    }
+    .blog-news #read-more-btn {
+        font-size: 2rem;
+        margin: 10px 16px;
+    }
+}
 
 /* END OF BLOG PART */
 
