@@ -1,5 +1,5 @@
 :root {
-    --gray: rgb(243, 243, 243);
+    --gray: rgb(226, 223, 223);
     --bd-width: 1000px;
     --main-font-color: rgb(100, 98, 98);
     --main-title-color: rgb(71, 69, 69);
@@ -39,38 +39,41 @@ a:visited, a:active, a:focus {
 header {
     position: fixed;
     inset: 0 0 auto 0;
-    max-width: var(--bd-width);
+    width: var(--bd-width);
     margin: 0 auto;
     z-index: 1;
     background-color: #fff;
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 428px) {
+    body {
+        margin: 0 auto;
+    }
+
     header {
+        width: 100vw;
         height: 64px;
+        margin: 0;
     }
     .mobile-menu {
-        width: 100%;
+        width: 100vw;
         display: inline-flex;
         justify-content: space-around;
         align-items: center;
     }
 
-    .mobile-menu a img {
-        width: 50px;
-    }
 
     #logo-name1, #logo-name2, body nav .logo, .menu li {
         display: none;
     }
 
-    .menu ul {
+    nav ul {
         display: none !important;
-        margin: 0 !important;
+        padding: 0 !important;
     }
 }
 
-@media only screen and (min-width: 413px)  {
+@media only screen and (min-width: 429px)  {
     .mobile-menu {
         display: none;
     }
@@ -144,34 +147,37 @@ nav ul li a {
     border-right: 1px solid black;
 }
 
-@media only screen and (max-width: 412px) {
+ @media only screen and (max-width: 428px) {
     .banner-container {
         display: block;
+        width: 100vw;
+        border: 0;
     }
     main .photo-container {
-        width: 100%;
+        width: 100vw;
         margin: 0;
         padding: 0;
     }
 
     main .photo-container img {
-        width: 100%;
+        width: 100vw;
         margin: 0;
         padding: 0;
     }
     
     main .info-content {
+        width: 100vw;
         margin: 0;
         padding: 0;
     }
     
     main .info-content h1 {
         margin: 32px 16px;
-        font-size: 6rem;
+        font-size: 2.25rem;
     }
     
     #start-here-btn span {
-        font-size: 3rem;
+        font-size: 1.2rem;
     }
 
     #start-here-btn {
@@ -185,11 +191,12 @@ nav ul li a {
     }
 
     main .p-description {
-        font-size: 3.5rem;
+        font-size: 1.2rem;
         margin-bottom: 24px;
         margin-left: 16px;
     }
 }
+
 .photo-container {
     width: 50%;
 }
@@ -274,41 +281,45 @@ nav ul li a {
     padding: 32px 0;
 }
 
-@media only screen and (max-width: max-width: 412px) {
+@media only screen and (max-width: 428px) {
     .blog-photo-container {
         display: none;
     }
 
     .blog-container {
         display: block;
+        width: 100vw;
+        border: 0;
     }
 
     .blog-container .blog-content {
-        width: 100%;
+        width: 100vw;
     }
     .blog-content .blog-row {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
         align-items:center;
         justify-content: center;
     }
 
     .blog-content .blog-pic {
-        width: 100%;
+        width: 100vw;
     }
     .blog-pic .mobile-pic {
-        width: 97%;
-        padding: 0 16px;
+        width: 92.5vw;
+        padding: 16px 16px;
     }
-    .mobile-pic img {
+    img.mobile-pic  {
         margin: 0;
         padding: 0;
     }
 
     .blog-row .blog-news {
-        width: 97%;
-        padding: 64px 16px
+        width: 100vw;
+        padding-top: 0;
+        padding-bottom: 16px;
+        margin-left: 16px;
     }
 
     .blog-pic .desktop-pic {
@@ -316,17 +327,23 @@ nav ul li a {
     }
 
     .blog-news .blog-title {
-        font-size: 4rem;
+        font-size: 1.5rem;
         margin: 0 16px;
     }
 
     .blog-news span {
-        font-size: 2rem;
+        font-size: 1rem;
         margin: 10px 16px;
     }
     .blog-news #read-more-btn {
-        font-size: 2rem;
-        margin: 10px 16px;
+        font-size: 1rem;
+        margin: 5px 16px;
+        padding: 0;
+    }
+
+    .blog-news .blog-news-description {
+        padding: 0;
+        margin: 5px 16px;
     }
 }
 
@@ -475,6 +492,40 @@ nav ul li a {
     margin-left: 16px;
 }
 
+@media only screen and (max-width: 428px) {
+    .courses {
+        width: 100vw;
+        border: 0;
+        background-color: #fff;
+        border-top: 1px solid var(--gray);
+    }
+
+    .courses-container {
+        display: none;
+    }
+
+    .mobile-crs-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .crs-mb-btn {
+        width: 80vw;
+        background-color: var(--gray);
+        padding: 16px;
+        margin: 8px;
+    }
+}
+
+@media only screen and (min-width: 429px) {
+    .mobile-crs-container {
+        display: none;
+    }
+}
+
+/* COURSES SECTION END */
+
 /* THESIS SECTION INIT */
 
 .thesis {
@@ -533,7 +584,26 @@ nav ul li a {
     justify-content: center;
 }
 
+@media only screen and (max-width: 428px) {
+    .thesis {
+        width: 100vw;
+        border: 0;
+    }
 
+    .vid-container, .vid-container video {
+        width: 99vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    .vid-description, .vid-description h2, .thesis-news {
+        display: none;
+    }
+}
+
+/* THESIS SECTION END */
+
+/* FOOTER START */
 
 footer {
     position: relative;
@@ -564,4 +634,11 @@ footer ul {
 
 footer ul li {
     margin: 0 5px;
+}
+
+@media only screen and (max-width: 428px) {
+    footer {
+        width: 100vw;
+        border: 0;
+    }
 }
